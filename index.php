@@ -2,10 +2,10 @@
 include 'db.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Chat System in PHP</title>
-	<link rel="stylesheet" href="style.css" media="all"/>
+	<link rel="stylesheet" href="styles.css" media="all"/>
 	<script>
 		function ajax(){
 
