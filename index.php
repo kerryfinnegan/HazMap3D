@@ -5,7 +5,7 @@ include 'db.php';
 <html lang="en">
 	<head>
 		<title>Chat System in PHP</title>
-	<link rel="stylesheet" href="styles.css" media="all"/>
+	<link rel="stylesheet" href="style.css" media="all"/>
 	<script>
 		function ajax(){
 
