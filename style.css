@@ -13,7 +13,7 @@ body {
   background:white;
   margin: 0 auto;
   padding:20px;
-  overflow-y:auto;
+  /* overflow-y:auto; */
 
 }
 #chat_box {
