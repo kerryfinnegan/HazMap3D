@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Reveal Bootstrap Template</title>
+  <title>HazMap3D</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -45,15 +46,14 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="fa fa-phone"></i> +1 5589 55488 55
+        <i class="fa fa-envelope-o"></i> <a href="mailto:info@micropack.co.uk">info@micropack.co.uk</a>
+        <i class="fa fa-phone"></i>+44 (0)1224 784055
       </div>
       <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/flamedetection" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/MicropackFG" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/user/MicropackEng/feed" class="youtube"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://www.linkedin.com/company/micropack-engineering-ltd" class="linkedin"><i class="fa fa-linkedin"></i></a>
       </div>
     </div>
   </section>
@@ -65,19 +65,14 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <h1><a href="#body"><img src="images/logoMicropack.png" alt="" title="" /></a>
+        </h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <li class="menu-has-children"><a href="">Software Download</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li><a href="#">Drop Down 3</a></li>
@@ -97,7 +92,7 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Making <span>your ideas</span><br>happen!</h2>
+      <h2>Welcome to the HazMap3D Portal</h2>
       <div>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
