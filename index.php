@@ -12,7 +12,7 @@ include 'db.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<link rel="stylesheet" href="style.css" media="all"/>
+<link rel="stylesheet" href="styles.css" media="all"/>
 <script>
 	function ajax(){
 
@@ -33,8 +33,17 @@ include 'db.php';
 
 </script>
 <style>
-		body{
+		/* body{
 			background-color: #2f79ef;
+		} */
+		*{
+		  padding:0;
+		  margin:0;
+		  border:0;
+		}
+
+		body {
+		  background:#4286f4;
 		}
 </style>
 </head>

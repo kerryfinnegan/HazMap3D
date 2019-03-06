@@ -9,7 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -50,7 +50,7 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-active">
-      <img src="image/slide1.png">
+      <img src="images/slide1.png">
       <div class="carousel-caption">
         <h1 class="display-2">Welcome to the HazMap3D Portal</h1>
         <!-- <h3>Complete Website Layout</h3>
@@ -59,10 +59,10 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="image/slide2.png">
+      <img src="images/slide2.png">
     </div>
     <div class="carousel-item">
-      <img src="image/slide3.png">
+      <img src="images/slide3.png">
     </div>
   </div>
 </div>
