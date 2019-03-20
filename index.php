@@ -14,6 +14,7 @@ include 'db.php';
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <link rel="stylesheet" href="styles.css" media="all"/>
 <script>
+
 	function ajax(){
 
 	var req = new XMLHttpRequest();
@@ -43,22 +44,25 @@ include 'db.php';
 		}
 
 		body {
-		  background:#4286f4;
+		  /* background:#4286f4; */
 		}
 </style>
 </head>
 
 
 <body onload="ajax();">
-<h3>Welcome to MICROPACK's Live Chat Area</h3>
+
+<h3 align="center">Welcome to MICROPACK's Live Chat Area</h3>
+
 <div id="container">
-	<div id="chat_box">
+	<div class="card bg-light text-dark" id="chat_box">
 	<div id="chat"></div>
 	</div>
+
 	<form method="post" action="index.php">
-	<input type="text" name="name" placeholder="Enter name"/>
-	<textarea name="msg" placeholder="Enter message"></textarea>
-	<button class="btn btn-success btn-lg" name="submit">Send Message</button>
+	<input type="text" name="name" placeholder="Enter Name"/>
+	<textarea name="msg" placeholder="Enter Message" cols="30" rows="4"></textarea>
+	<button type="submit" class="btn btn-success btn-block btn-lg" name="submit">Send Message</button>
 	<!-- <input type="submit" name="submit" value="Send it"/> -->
 
 	</form>

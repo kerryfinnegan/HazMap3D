@@ -32,7 +32,7 @@
           <a class="nav-link" href="#">Payment</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="index.php">live Chat</a>
+          <a class="nav-link" href="index.php">Live Chat</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Contact</a>
@@ -220,7 +220,7 @@
   <div class="container-fluid padding">
     <div class="row text-center">
       <div class="col-md-4">
-        <img src="image/logoMicropack.png"
+        <img src="images/logoMicropack.png"
         <hr class="light">
         <p>+44 (0)1224 784055</p>
         <p><a href="mailto:SALES@MICROPACK.CO.UK"</a></p>
@@ -235,6 +235,7 @@
         <p>AFRICA</p>
         <p>EUROPE & FSU</p>
       </div>
+			<br>
       <div class="col-md-4">
         <hr class="light">
         <h5>OPENING HOURS</h5>
