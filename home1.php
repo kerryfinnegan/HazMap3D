@@ -16,7 +16,7 @@
 <!-- Navigation -->
 <nav class ="navbar navbar-expand-md navbar-light bg-light sticky-top">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#"><img src="images/logoMicropack.png"></a>
+  <a class="navbar-brand" href="#"><img src="images/logoMicropack.jpg"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -49,8 +49,8 @@
     <li data-target="#slides" data-slide-to="2"></li>
   </ul>
   <div class="carousel-inner">
-    <div class="carousel-active">
-      <img src="images/slide1.png">
+    <div class="carousel-item active">
+      <img style="object-fit: cover; overflow: hidden;"src="images/slide1.jpg">
       <div class="carousel-caption">
         <h1 class="display-2">Welcome to the HazMap3D Portal</h1>
         <!-- <h3>Complete Website Layout</h3>
@@ -59,10 +59,10 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slide2.png">
+      <img style="object-fit: cover; overflow: hidden;" src="images/slide2.jpg">
     </div>
     <div class="carousel-item">
-      <img src="images/slide3.png">
+      <img style="object-fit: cover; overflow: hidden;" src="images/slide3.jpg">
     </div>
   </div>
 </div>
@@ -82,17 +82,17 @@
 <div class="container-fluid padding">
   <div class="row welcome text-center">
     <div class="col-12">
-      <h1 class="display-4">Built with ease</h1>
+      <h1 class="display-4">Welcome to the HazMap3D Software Portal</h1>
     </div>
     <hr>
     <div class="col-12">
-      <p class="lead">Welcome</p>
+      <p class="lead">HazMap3D software consits of their 3D Fire and Gas mapping software. Below is some Information about each of the software. </p>
     </div>
   </div>
 </div>
-
+<hr class="my-4">
 <!--- Three Column Section -->
-<div class="container-fluid padding">
+<!-- <div class="container-fluid padding">
   <div class="row text-center padding">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <i class="fas fa-code"></i>
@@ -111,21 +111,45 @@
     </div>
   </div>
   <hr class="my-4">
-</div>
+</div> -->
 <!--- Two Column Section -->
 <div class="container-fluid padding">
   <div class="row padding">
     <div class="col-md-12 col-lg-6">
-      <h2>If you build it...</h2>
-      <p>Hello name is kerry</p>
-      <p>Welcome to the website</p>
+      <h2>3D Flame Detection Mapping</h2>
+      <p>Operator specific requirements on how to map flame detector coverage can range significantly.
+				As Micropack have been involved in the generation of most of these methodologies,
+				HazMap3D is the only F&G Mapping package which will give the user full peace of mind in design.
+			</p>
+			<p>Regardless of how complex or simplistic the client requirement for mapping is, HazMap3D is the tool to demonstrate compliance.
+			Full detector library at your fingertips with no exceptions. Over the last 2 decades, when a new flame detector is brought to the market,
+			this has been coded into our mapping software.
+			Don’t just take the manufacturers word for it: Micropack applies independent verification of flame detector capabilities. HazMap3D provides the
+			user real life data on the performance of each flame detection technology, as verified by completely independent 3rd parties. Manufacturers are
+			trying to sell a detector so should we just apply data directly from them and assume it to be realistic to the environment we are applying it to? </p>
+      <p>Hazard grading has never been easier: HazMap3D’s complex code allows the simple double click to select equipment, whether individual process units
+				have been defined in the 3D model or not.
+			 Placing flame detectors exactly where you want, with no limitation from the model: a simple double click places detectors into the environment in the
+			 most user-friendly manner available. </p>
       <br>
-      <a href="#" class="btn btn-primary">Learn More</a>
+
     </div>
     <div class="col-lg-6">
-      <img src="#" class="img-fluid">
+      <h2>3D Gas Detection Mapping</h2>
+				<p>HazMap3D can be utilised to show gas detection coverage to target gas cloud sizes, perimeter/ boundary requirements, or local leak detection coverage.
+					When used for volumetric detection, the target gas cloud size is proposed for each area based on the area’s volume, confinement and degree of congestion.
+					</p>
+					<p>Existing detectors can easily be placed into the model. These detectors are then analysed in HazMap3D against the predetermined performance target.
+						This package objectively assesses the coverage of the existing gas detection quickly and reliably.
+						Micropack understands that gas detection can be a contentious issue, and that there is more to just putting a detector at a nominal spacing, and that there
+						is also far more to design than simply hitting a target percentage point.</p>
+					<p>Fully 3D Gas Detection Mapping from the experts who understand there is more to gas detection than a detector every 5 metres.
+					   Fully performance based target gas cloud methodology to allow fast and accurate analysis of the volumetric coverage.
+					   Full detector library of all detection manufacturers and models for point and open path systems, whether laser based,
+						 infrared or catalytic for the more specialised applications. </p>
     </div>
 </div>
+<a href=" https://www.micropackfireandgas.com/fire-gas-mapping/3d-fire-gas-mapping-software" class="btn btn-primary" style="align:center;">Click Here for more Info</a>
 </div>
 
 <hr class="my-4">
@@ -138,7 +162,7 @@
 </figure>
 
 <!--- Emoji Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">click for function
+<!-- <button class="fun" data-toggle="collapse" data-target="#emoji">click for function
 </button>
 <div id="emoji" class="collapse">
   <div class="container-fluid padding">
@@ -160,7 +184,7 @@
       </div>
 </div>
 <div>
-</div>
+</div> -->
 
 <!--- Meet the team -->
 <div class="container-fluid padding">
@@ -215,36 +239,39 @@
 </div>
 </div>
 
-<!--- Footer -->
+<!-- - Footer -->
 <footer>
   <div class="container-fluid padding">
     <div class="row text-center">
       <div class="col-md-4">
-        <img src="images/logoMicropack.png"
+        <img src="images/logoMicropack.jpg">
         <hr class="light">
+				<i class="fas fa-phone-square" style="float:right;"></i>
         <p>+44 (0)1224 784055</p>
         <p><a href="mailto:SALES@MICROPACK.CO.UK"</a></p>
-        <p>MICROPACK (ENGINEERING) LTD, FIRE TRAINING CENTRE, SCHOOLHILL, PORTLETHEN, ABERDEEN, AB12 4RR, SCOTLAND</p>
+        <p>MICROPACK (ENGINEERING) LTD</p>
+				<p>FIRE TRAINING CENTRE, SCHOOLHILL</p>
+				<p>PORTLETHEN</p>
+			 	<p>ABERDEEN</p>
+			 	<p>AB12 4RR</p>
+			 	<p>SCOTLAND</p>
       </div>
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <hr class="light">
         <h5>OFFICE LOCATION</h5>
+				<hr class="light">
         <p>AMERICA</p>
         <p>FAR EAST</p>
         <p>MIDDLE EAST</p>
         <p>AFRICA</p>
         <p>EUROPE & FSU</p>
-      </div>
-			<br>
-      <div class="col-md-4">
-        <hr class="light">
+      </div> -->
+			<div class ="col-md-4">
+        <hr class ="light">
         <h5>OPENING HOURS</h5>
+				<hr class ="light">
         <p>SUNDAY  CLOSED</p>
-        <p>MONDAY  8:30AM-5:30PM</p>
-        <p>TUESDAY 8:30AM-5:30PM</p>
-        <p>WEDNESDAY 8:30AM-5:30PM</p>
-        <p>THURSDAY 8:30AM-5:30PM</p>
-        <p>FRIDAY 8:30AM-5:30PM</p>
+        <p>MONDAY-FRIDAY 8:30AM-5:30PM</p>
         <p>SATURDAY CLOSED</p>
       </div>
       <div class="col-12">
@@ -254,5 +281,6 @@
     </div>
   </div>
 </footer>
+
 </body>
 </html>

@@ -19,8 +19,10 @@ html,body{
 }
 
 .carousel-inner img{
-  width:100%;
-  height:100%;
+  height: 200px;
+  width: 300px;
+  /* width:100%;
+  height:100%; */
 }
 .carousel-caption{
   position: absolute;
@@ -114,7 +116,7 @@ footer{
 }
 hr.light{
   border-top:1px solid #d5d5d5;
-  width:75%
+  width:75%;
   margin-top:.8rem;
   margin-bottom: 1rem;
 }
@@ -123,7 +125,7 @@ footer a{
 }
 hr.light-100{
   border-top:1px solid #d5d5d5;
-  width:100%
+  width:100%;
   margin-top:.8rem;
   margin-bottom: 1rem;
 }
@@ -179,6 +181,10 @@ hr.light-100{
 }
 .carousel-indicators{
   display: none;
+}
+
+.carousel slide{
+
 }
 .display-4{
   font-size: 160%;
@@ -259,9 +265,9 @@ textarea{
 input[type='text']:hover{
   border:1px solid blue;
 }
-input[type="submit"]:hover{
+/* input[type="submit"]:hover{
  border:1px solid blue;
-}
+} */
 textarea:hover{
   border:1px solid blue;
 }
