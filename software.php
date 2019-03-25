@@ -42,7 +42,7 @@
 </div>
 </nav>
 <!--- Image Slider -->
-<!-- <div id="slides" class="carousel slide" data-ride="carousel">
+<div id="slides" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#slides" data-slide-to="0" class="active"></li>
     <li data-target="#slides" data-slide-to="1"></li>
@@ -50,25 +50,25 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/slide1.jpg">
+      <img style="object-fit: cover; overflow: hidden;"src="images/slide1.jpg">
       <div class="carousel-caption">
         <h1 class="display-2">Welcome to the HazMap3D Portal</h1>
-       <h3>Complete Website Layout</h3>
+        <!-- <h3>Complete Website Layout</h3>
         <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
         <button type="button" class="btn btn-primary btn-lg">Get Started</button> -->
-      <!-- </div>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slide2.jpg">
+      <img style="object-fit: cover; overflow: hidden;" src="images/slide2.jpg">
     </div>
     <div class="carousel-item">
-      <img src="images/slide3.jpg">
+      <img style="object-fit: cover; overflow: hidden;" src="images/slide3.jpg">
     </div>
   </div>
-</div> -->
+</div>
 
 <!--- Jumbotron -->
-<!-- <div class="container-fluid">
+<div class="container-fluid">
 <div class="row jumbotron">
       <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
         <p class="lead">Kerry</p>
@@ -77,9 +77,9 @@
         <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
       </div>
 </div>
-</div> -->
+</div>
 <!--- Welcome Section -->
-<div class="container-fluid padding" id="background">
+<div class="container-fluid padding">
   <div class="row welcome text-center">
     <div class="col-12">
       <h1 class="display-4">Welcome to the HazMap3D Software Portal</h1>
@@ -88,8 +88,8 @@
     <div class="col-12">
       <p class="lead">HazMap3D software consits of their 3D Fire and Gas mapping software. Below is some Information about each of the software. </p>
     </div>
-	</div>
- </div>
+  </div>
+</div>
 <hr class="my-4">
 <!--- Three Column Section -->
 <!-- <div class="container-fluid padding">
@@ -154,37 +154,12 @@
 
 <hr class="my-4">
 <!--- Fixed background -->
-<figure>
+<!-- <figure>
   <div class="fixed-wrap">
     <div id="fixed">
     </div>
   </div>
-</figure>
-
-<!--- Emoji Section -->
-<!-- <button class="fun" data-toggle="collapse" data-target="#emoji">click for function
-</button>
-<div id="emoji" class="collapse">
-  <div class="container-fluid padding">
-    <div class="row text-center">
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-</div>
-<div>
-</div> -->
+</figure> -->
 
 <!--- Meet the team -->
 <div class="container-fluid padding">
@@ -228,7 +203,7 @@
 <div class="container-fluid padding">
   <div class="row text-center padding">
     <div class="col-12">
-      <h2>Connect</h2>
+      <h2>VISIT OUR SOCIALS</h2>
     </div>
     <div class="col-12 social padding">
       <a href="https://www.facebook.com/MicropackFG"><i class="fab fa-facebook"></i></a>
@@ -240,23 +215,22 @@
 </div>
 
 <!-- - Footer -->
-<!-- <footer>
+<footer>
   <div class="container-fluid padding">
     <div class="row text-center">
       <div class="col-md-4">
         <img src="images/logoMicropack.jpg">
         <hr class="light">
-				<! <i class="fas fa-phone-square" style="float:right;"></i> -->
-				<!-- <i class="fas fa-mobile-alt">+44 (0)1224 784055</i> -->
-        <!-- <span class="contact-icon-phone-yellow">+44 (0)1224 784055</span> -->
-        <!-- <span class="contact-icon-email-yellow"><a href="mailto:SALES@MICROPACK.CO.UK"</a></span>
+				<i class="fas fa-phone-square" style="float:right;"></i>
+        <p>+44 (0)1224 784055</p>
+        <p><a href="mailto:SALES@MICROPACK.CO.UK"</a></p>
         <p>MICROPACK (ENGINEERING) LTD</p>
 				<p>FIRE TRAINING CENTRE, SCHOOLHILL</p>
 				<p>PORTLETHEN</p>
 			 	<p>ABERDEEN</p>
 			 	<p>AB12 4RR</p>
 			 	<p>SCOTLAND</p>
-      </div> -->
+      </div>
       <!-- <div class="col-md-4">
         <hr class="light">
         <h5>OFFICE LOCATION</h5>
@@ -267,7 +241,7 @@
         <p>AFRICA</p>
         <p>EUROPE & FSU</p>
       </div> -->
-			<!-- <div class ="col-md-4">
+			<div class ="col-md-4">
         <hr class ="light">
         <h5>OPENING HOURS</h5>
 				<hr class ="light">
@@ -281,63 +255,7 @@
       </div>
     </div>
   </div>
-</footer> -->
-
-
-<!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
-
-    <!-- Footer Text -->
-    <div class="container-fluid text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <!-- Content -->
-					<img src="images/logoMicropack.jpg">
-          <!-- <h5 class="text-uppercase font-weight-bold">Footer text 1</h5> -->
-
-	        <a href="+44 (0)1224 784055"></a>
-	        <a href="mailto:SALES@MICROPACK.CO.UK"></a>
-	        <p>MICROPACK (ENGINEERING) LTD,<br>FIRE TRAINING CENTRE, SCHOOLHILL
-					PORTLETHEN,<br>ABERDEEN
-				 	AB12 4RR,<br>SCOTLAND</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mb-md-0 mb-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Opening Hours</h5>
-					<p>SUNDAY  CLOSED</p>
-	        <p>MONDAY-FRIDAY 8:30AM-5:30PM</p>
-	        <p>SATURDAY CLOSED</p>
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Footer Text -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="https://www.micropackfireandgas.com"> micropackfireandgas.com</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
+</footer>
 
 </body>
 </html>
