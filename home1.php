@@ -23,7 +23,7 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="home1.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Software</a>
@@ -35,7 +35,7 @@
           <a class="nav-link" href="index.php">Live Chat</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
   </div>
