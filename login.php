@@ -1,28 +1,36 @@
-<?php
-session_start(); // Starting Session
-$error = ''; // Variable To Store Error Message
-if (isset($_POST['submit'])) {
-  if (empty($_POST['username']) || empty($_POST['password'])) {
-    $error = "Username or Password is invalid";
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+  body {
+    font-size: 120%;
+    background: #F8F8FF;
   }
-  else{
-    // Define $username and $password
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    // mysqli_connect() function opens a new connection to the MySQL server.
-    $conn = mysqli_connect("localhost", "root", "", "company");
-    // SQL query to fetch information of registerd users and finds user match.
-    $query = "SELECT username, password from login where username=? AND password=? LIMIT 1";
-    // To protect MySQL injection for Security purpose
-    $stmt = $conn->prepare($query);
-    $stmt->bind_param("ss", $username, $password);
-    $stmt->execute();
-    $stmt->bind_result($username, $password);
-    $stmt->store_result();
-    if($stmt->fetch()) //fetching the contents of the row {
-      $_SESSION['login_user'] = $username; // Initializing Session
-    header("location: profile.php"); // Redirecting To Profile Page
-  }
-  mysqli_close($conn); // Closing Connection
-}
-?>
+  </style>
+</head>
+<body>
+  <div class="header">
+  	<h2>Login</h2>
+  </div>
+
+  <form method="post" action="login.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="username" >
+  	</div>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" name="password">
+  	</div>
+  	<div class="input-group">
+  		<button type="submit" class="btn" name="login_user">Login</button>
+  	</div>
+  	<p>
+  		Not yet a member? <a href="register.php">Sign up</a>
+  	</p>
+  </form>
+</body>
+</html>
