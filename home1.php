@@ -1,3 +1,18 @@
+<?php
+  session_start();
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +43,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Software</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="loginForm.php">Login</a>
-        </li>
         <li class="nav-item active">
           <a class="nav-link" href="index.php">Live Chat</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="contact.php">Contact</a>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link" href="login.php" style="color: red;">Logout</a>
         </li>
       </ul>
   </div>
@@ -79,11 +94,11 @@
 </div>
 </div> -->
 <!--- Welcome Section -->
-<div class="container-fluid padding" id="background">
+<div class="container-fluid padding" >
   <div class="row welcome text-center">
     <div class="col-12">
-      <h1 class="display-4">Welcome to the HazMap3D Software Portal</h1>
-    </div>
+      <h1 class="display-4">Welcome <strong><i><?php echo $_SESSION['username']; ?></i></strong> to the HazMap3D Software Portal</h1>
+		</div>
     <hr>
     <div class="col-12">
       <p class="lead">HazMap3D software consits of their 3D Fire and Gas mapping software. Below is some Information about each of the software. </p>

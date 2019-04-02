@@ -1,3 +1,42 @@
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'C:\composer\vendor\autoload.php';
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+if(isset($_POST['submit'])){
+	// require 'phpmailer/PHPMailerAutoload.php';
+	// require 'credential.php';
+	// Instantiation and passing `true` enables exceptions
+	$mail = new PHPMailer(true);
+}
+
+try {
+    //Server settings
+    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = "kerryfinnegan1994@gmail.com";                     // SMTP username
+    $mail->Password   = "";                               // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom($_POST['email'], $_POST['name']);
+    $mail->addAddress('kerryfinnegan25@gmail.com');     // Add a recipient
+    $mail->addReplyTo("kerryfinnegan1994@gmail.com");
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = $_POST['Subject'];
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = $_POST['message'];
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +67,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Software</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Payment</a>
-        </li>
         <li class="nav-item active">
           <a class="nav-link" href="index.php">Live Chat</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="contact.php">Contact</a>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link" href="login.php" style="color: red;">Logout</a>
         </li>
       </ul>
   </div>
@@ -113,7 +152,7 @@
 				</form>
 
 				<div class="text-center text-md-left">
-						<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+						<a class="btn btn-primary" type="submit">Send</a>
 				</div>
 				<div class="status"></div>
 		</div>
