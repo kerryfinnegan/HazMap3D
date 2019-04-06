@@ -55,7 +55,7 @@ try {
 <!-- Navigation -->
 <nav class ="navbar navbar-expand-md navbar-light bg-light sticky-top">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#"><img src="images/logoMicropack.jpg"></a>
+  <a class="navbar-brand" href="#"><img src="images/logoMicropack.jpg" alt="Logo of Company"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -65,7 +65,7 @@ try {
           <a class="nav-link" href="home1.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Software</a>
+          <a class="nav-link" href="software.php">Software</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="index.php">Live Chat</a>
@@ -213,7 +213,7 @@ try {
         <div class="col-md-6 mt-md-0 mt-3">
 
           <!-- Content -->
-					<img src="images/logoMicropack.jpg">
+					<img src="images/logoMicropack.jpg" alt="Logo of Company">
           <!-- <h5 class="text-uppercase font-weight-bold">Footer text 1</h5> -->
 
 	        <a href="+44 (0)1224 784055"></a>
