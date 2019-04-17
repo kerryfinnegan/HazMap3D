@@ -40,7 +40,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="home1.php">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="software.php">Software</a>
         </li>
         <li class="nav-item active">
@@ -49,7 +49,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
-				<li class="nav-item">
+				<li class="nav-item active">
           <a class="nav-link" href="login.php" style="color: red;">Logout</a>
         </li>
       </ul>

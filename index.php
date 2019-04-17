@@ -46,6 +46,7 @@ include 'db.php';
 		body {
 		  /* background:#4286f4; */
 		}
+		.error {color: #FF0000;}
 </style>
 </head>
 
@@ -58,31 +59,53 @@ include 'db.php';
 	<div class="card bg-light text-dark" id="chat_box">
 	<div id="chat"></div>
 	</div>
+<p><span class = "error">* required field.</span></p>
+<?php
+$nameErr = $msgErr = "";
+$name = $msg  = "";
+//if($_POST['submit'] || $_POST['name'] || $_POST['msg']){
+if(isset($_POST['submit'])){
+$name = $_POST['name'];
+$msg = $_POST['msg'];
 
-	<form method="post" action="index.php">
-	<input type="text" name="name" placeholder="Enter Name"/>
-	<textarea name="msg" placeholder="Enter Message" cols="30" rows="4"></textarea>
+function test_input($data) {
+						$data = trim($data);
+						$data = stripslashes($data);
+						$data = htmlspecialchars($data);
+						return $data;
+				 }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+					if (empty($_POST["name"])) {
+						 $nameErr = "Name is required";
+					}else {
+						 $name = test_input($_POST["name"]);
+					}
+					if (empty($_POST["msg"])) {
+						 $msgErr = "Message is required";
+					}else {
+						 $name = test_input($_POST["msg"]);
+					}
+
+
+
+$query = "INSERT INTO chat (name,msg) values ('$name','$msg')";
+
+$run = $con->query($query);
+}
+
+}
+?>
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+	<input type="text" name="name" placeholder="Enter Name" />
+   <span class = "error">* <?php echo $nameErr;?></span>
+	<textarea name="msg" placeholder="Enter Message" cols="30" rows="4" ></textarea>
+   <span class = "error">* <?php echo $msgErr;?></span>
 	<button type="submit" class="btn btn-success btn-block btn-lg" name="submit">Send Message</button>
-	<!-- <input type="submit" name="submit" value="Send it"/> -->
 
 	</form>
-	<?php
-	if(isset($_POST['submit'])){
 
-	$name = $_POST['name'];
-	$msg = $_POST['msg'];
-
-	$query = "INSERT INTO chat (name,msg) values ('$name','$msg')";
-
-	$run = $con->query($query);
-
-	if($run){
-		echo "<embed loop='false' src='chat.wav' hidden='true' autoplay='true'/>";
-	}
-
-
-	}
-	?>
 
 </div>
 </body>

@@ -61,7 +61,7 @@
 <div class="container-fluid padding" >
   <div class="row welcome text-center">
     <div class="col-12">
-      <h1 class="display-4">Below we will show some youtube videos of the software being utilised</h1>
+      <h1 class="display-4">Below we will show some YouTube videos of the software being utilised</h1>
 		</div>
     <hr>
     <div class="row jumbotron">
