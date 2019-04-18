@@ -56,43 +56,7 @@
   </div>
 </div>
 </nav>
-<!--- Image Slider -->
-<!-- <div id="slides" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#slides" data-slide-to="0" class="active"></li>
-    <li data-target="#slides" data-slide-to="1"></li>
-    <li data-target="#slides" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/slide1.jpg">
-      <div class="carousel-caption">
-        <h1 class="display-2">Welcome to the HazMap3D Portal</h1>
-       <h3>Complete Website Layout</h3>
-        <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-        <button type="button" class="btn btn-primary btn-lg">Get Started</button> -->
-      <!-- </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/slide2.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="images/slide3.jpg">
-    </div>
-  </div>
-</div> -->
 
-<!--- Jumbotron -->
-<!-- <div class="container-fluid">
-<div class="row jumbotron">
-      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-        <p class="lead">Kerry</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-        <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
-      </div>
-</div>
-</div> -->
 <!--- Welcome Section -->
 <div class="container-fluid padding" >
   <div class="row welcome text-center">
@@ -106,27 +70,6 @@
 	</div>
  </div>
 <hr class="my-4">
-<!--- Three Column Section -->
-<!-- <div class="container-fluid padding">
-  <div class="row text-center padding">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <i class="fas fa-code"></i>
-      <h3>HTML5</h3>
-      <p>Welcome</p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <i class="fas fa-bold"></i>
-      <h3>BOOTSTRAP</h3>
-      <p>Welcome</p>
-    </div>
-    <div class="col-sm-12 col-md-4">
-      <i class="fas fa-css3"></i>
-      <h3>CSS3</h3>
-      <p>Welcome</p>
-    </div>
-  </div>
-  <hr class="my-4">
-</div> -->
 <!--- Two Column Section -->
 <div class="container-fluid padding">
   <div class="row padding">
@@ -168,76 +111,8 @@
 </div>
 
 <hr class="my-4">
-<!--- Fixed background -->
-<figure>
-  <div class="fixed-wrap">
-    <div id="fixed">
-    </div>
-  </div>
-</figure>
 
-<!--- Emoji Section -->
-<!-- <button class="fun" data-toggle="collapse" data-target="#emoji">click for function
-</button>
-<div id="emoji" class="collapse">
-  <div class="container-fluid padding">
-    <div class="row text-center">
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <img class"gif" src="">
-      </div>
-</div>
-<div>
-</div> -->
 
-<!--- Meet the team -->
-<div class="container-fluid padding">
-  <div class="row welcome text-center">
-    <div class="col-12">
-      <h1 class="display-4">Meet the team</h1>
-    </div>
-    <hr>
-  </div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding">
-  <div class="row padding">
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-imd-top" src="">
-        <div class="card-body">
-        </div>
-      </div>
-    </div>
-</div>
-
-<!--- Two Column Section -->
-<div class="conatiner-fluid padding">
-  <div class="row padding">
-    <div class="col-lg-6">
-      <h2>Our Philosophy</h2>
-      <p></p>
-      <p></p>
-      <br>
-    </div>
-    <div class="col-lg-6">
-      <img src="#" class="img-fluid">
-    </div>
-  </div>
-  <hr class="my-4">
-</div>
 
 <!--- Connect -->
 <div class="container-fluid padding">
@@ -253,51 +128,6 @@
     </div>
 </div>
 </div>
-
-<!-- - Footer -->
-<!-- <footer>
-  <div class="container-fluid padding">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img src="images/logoMicropack.jpg">
-        <hr class="light">
-				<! <i class="fas fa-phone-square" style="float:right;"></i> -->
-				<!-- <i class="fas fa-mobile-alt">+44 (0)1224 784055</i> -->
-        <!-- <span class="contact-icon-phone-yellow">+44 (0)1224 784055</span> -->
-        <!-- <span class="contact-icon-email-yellow"><a href="mailto:SALES@MICROPACK.CO.UK"</a></span>
-        <p>MICROPACK (ENGINEERING) LTD</p>
-				<p>FIRE TRAINING CENTRE, SCHOOLHILL</p>
-				<p>PORTLETHEN</p>
-			 	<p>ABERDEEN</p>
-			 	<p>AB12 4RR</p>
-			 	<p>SCOTLAND</p>
-      </div> -->
-      <!-- <div class="col-md-4">
-        <hr class="light">
-        <h5>OFFICE LOCATION</h5>
-				<hr class="light">
-        <p>AMERICA</p>
-        <p>FAR EAST</p>
-        <p>MIDDLE EAST</p>
-        <p>AFRICA</p>
-        <p>EUROPE & FSU</p>
-      </div> -->
-			<!-- <div class ="col-md-4">
-        <hr class ="light">
-        <h5>OPENING HOURS</h5>
-				<hr class ="light">
-        <p>SUNDAY  CLOSED</p>
-        <p>MONDAY-FRIDAY 8:30AM-5:30PM</p>
-        <p>SATURDAY CLOSED</p>
-      </div>
-      <div class="col-12">
-        <hr class="light-100">
-        <h5>&copy; www.micropackfireandgas.com</h5>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
 
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4">

@@ -12,7 +12,6 @@
   }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +39,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="home1.php">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#">Software</a>
         </li>
         <li class="nav-item active">
@@ -49,7 +48,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
-				<li class="nav-item">
+				<li class="nav-item active">
           <a class="nav-link" href="login.php" style="color: red;">Logout</a>
         </li>
       </ul>
@@ -80,11 +79,6 @@
 </div>
  </div>
 <hr class="my-4">
-
-
-
-
-
 <!--- Connect -->
 <div class="container-fluid padding">
   <div class="row text-center padding">
@@ -99,51 +93,6 @@
     </div>
 </div>
 </div>
-
-<!-- - Footer -->
-<!-- <footer>
-  <div class="container-fluid padding">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img src="images/logoMicropack.jpg">
-        <hr class="light">
-				<! <i class="fas fa-phone-square" style="float:right;"></i> -->
-				<!-- <i class="fas fa-mobile-alt">+44 (0)1224 784055</i> -->
-        <!-- <span class="contact-icon-phone-yellow">+44 (0)1224 784055</span> -->
-        <!-- <span class="contact-icon-email-yellow"><a href="mailto:SALES@MICROPACK.CO.UK"</a></span>
-        <p>MICROPACK (ENGINEERING) LTD</p>
-				<p>FIRE TRAINING CENTRE, SCHOOLHILL</p>
-				<p>PORTLETHEN</p>
-			 	<p>ABERDEEN</p>
-			 	<p>AB12 4RR</p>
-			 	<p>SCOTLAND</p>
-      </div> -->
-      <!-- <div class="col-md-4">
-        <hr class="light">
-        <h5>OFFICE LOCATION</h5>
-				<hr class="light">
-        <p>AMERICA</p>
-        <p>FAR EAST</p>
-        <p>MIDDLE EAST</p>
-        <p>AFRICA</p>
-        <p>EUROPE & FSU</p>
-      </div> -->
-			<!-- <div class ="col-md-4">
-        <hr class ="light">
-        <h5>OPENING HOURS</h5>
-				<hr class ="light">
-        <p>SUNDAY  CLOSED</p>
-        <p>MONDAY-FRIDAY 8:30AM-5:30PM</p>
-        <p>SATURDAY CLOSED</p>
-      </div>
-      <div class="col-12">
-        <hr class="light-100">
-        <h5>&copy; www.micropackfireandgas.com</h5>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
 
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4">
@@ -198,7 +147,5 @@
 
   </footer>
   <!-- Footer -->
-
-
 </body>
 </html>

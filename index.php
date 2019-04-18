@@ -13,7 +13,7 @@ include 'db.php';
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <link rel="stylesheet" href="styles.css" media="all"/>
-<script>
+<script type="text/javascript">
 
 	function ajax(){
 
@@ -31,6 +31,7 @@ include 'db.php';
 
 	}
 	setInterval(function(){ajax()},1000);
+
 
 </script>
 <style>
@@ -54,8 +55,9 @@ include 'db.php';
 <body onload="ajax();">
 
 <h3 align="center">Welcome to MICROPACK's Live Chat Area</h3>
-
+<input class="btn btn-primary"  onClick="window.location='home1.php';" value="Exit">
 <div id="container">
+
 	<div class="card bg-light text-dark" id="chat_box">
 	<div id="chat"></div>
 	</div>

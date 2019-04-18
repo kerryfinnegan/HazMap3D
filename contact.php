@@ -1,41 +1,48 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'C:\composer\vendor\autoload.php';
-// Import PHPMailer classes into the global namespace
-// These must be at the top of your script, not inside a function
-if(isset($_POST['submit'])){
-	// require 'phpmailer/PHPMailerAutoload.php';
-	// require 'credential.php';
-	// Instantiation and passing `true` enables exceptions
-	$mail = new PHPMailer(true);
+	if(isset($_POST['submit'])){
+		$nameErr = $messageErr = $subjectErr = $emailErr = "";
+		$name = $message = $subject = $email = "";
+
+	$name = $_POST['name'];
+	$message = $_POST['message'];
+	$subject = $_POST['subject'];
+	$email = $_POST['email'];
+
+	function test_input($data) {
+							$data = trim($data);
+							$data = stripslashes($data);
+							$data = htmlspecialchars($data);
+							return $data;
+					 }
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+						if (empty($_POST["name"])) {
+							 $nameErr = "Name is required";
+						}else {
+							 $name = test_input($_POST["name"]);
+						}
+						if (empty($_POST["message"])) {
+							 $messageErr = "Message is required";
+						}else {
+							 $name = test_input($_POST["message"]);
+						}
+						if (empty($_POST["subject"])) {
+							 $subjectErr = "Subject is required";
+						}else {
+							 $name = test_input($_POST["subject"]);
+						}if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+							$emailErr = "Email is required";
+					 }else {
+							$name = test_input($_POST["email"]);
+}
+							$content="From: $name \n Email: $email \n Message: $message";
+							$recipient = "kerryfinnegan@hotmail.co.uk";
+							$mailheader = "From: $email \r\n";
+							mail($recipient, $subject, $content, $mailheader) or die("Error!");
+							echo "Email successfully sent!";
+}
 }
 
-try {
-    //Server settings
-    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = "kerryfinnegan1994@gmail.com";                     // SMTP username
-    $mail->Password   = "";                               // SMTP password
-    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
-
-    //Recipients
-    $mail->setFrom($_POST['email'], $_POST['name']);
-    $mail->addAddress('kerryfinnegan25@gmail.com');     // Add a recipient
-    $mail->addReplyTo("kerryfinnegan1994@gmail.com");
-
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = $_POST['Subject'];
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = $_POST['message'];
-
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +55,10 @@ try {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<style>
+.error {color: #FF0000;}
+
+	</style>
 	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -64,7 +75,7 @@ try {
         <li class="nav-item active">
           <a class="nav-link" href="home1.php">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="software.php">Software</a>
         </li>
         <li class="nav-item active">
@@ -73,7 +84,7 @@ try {
         <li class="nav-item active">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
-				<li class="nav-item">
+				<li class="nav-item active">
           <a class="nav-link" href="login.php" style="color: red;">Logout</a>
         </li>
       </ul>
@@ -92,12 +103,12 @@ try {
 <!--Section description-->
 <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
 		a matter of hours to help you.</p>
-
+<p><span class = "error">* required field.</span></p>
 <div class="row">
 
 		<!--Grid column-->
 		<div class="col-md-9 mb-md-0 mb-5">
-				<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+				<form id="contact-form" name="contact-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
 						<!--Grid row-->
 						<div class="row">
@@ -107,6 +118,7 @@ try {
 										<div class="md-form mb-0">
 												<input type="text" id="name" name="name" class="form-control">
 												<label for="name" class="">Your name</label>
+												<span class = "error">* <?php echo $nameErr;?></span>
 										</div>
 								</div>
 								<!--Grid column-->
@@ -116,6 +128,7 @@ try {
 										<div class="md-form mb-0">
 												<input type="text" id="email" name="email" class="form-control">
 												<label for="email" class="">Your email</label>
+												<span class = "error">* <?php echo $emailErr;?></span>
 										</div>
 								</div>
 								<!--Grid column-->
@@ -129,6 +142,7 @@ try {
 										<div class="md-form mb-0">
 												<input type="text" id="subject" name="subject" class="form-control">
 												<label for="subject" class="">Subject</label>
+												<span class = "error">* <?php echo $subjectErr;?></span>
 										</div>
 								</div>
 						</div>
@@ -143,18 +157,19 @@ try {
 										<div class="md-form">
 												<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
 												<label for="message">Your message</label>
+												<span class = "error">* <?php echo $messageErr;?></span>
 										</div>
 
 								</div>
 						</div>
+						<div class="text-center text-md-left">
+								<input class="btn btn-primary" type="submit" name="submit" value="Send">
+						</div>
+						<div class="status"></div>
 						<!--Grid row-->
-
 				</form>
 
-				<div class="text-center text-md-left">
-						<a class="btn btn-primary" type="submit">Send</a>
-				</div>
-				<div class="status"></div>
+
 		</div>
 		<!--Grid column-->
 
@@ -253,7 +268,5 @@ try {
 
   </footer>
   <!-- Footer -->
-
-
 </body>
 </html>
